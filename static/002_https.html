@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Express Application 002 : HTTPS Server</title>
+    <link rel="stylesheet" type="text/css" href="/css/default.css" />
+  </head>
+  <body>
+    <h1>Sample Express Application 002 : HTTPS Server</h1>
+
+    <p>
+      If you're reading this, it means you were able to start the http and/or https server(s).
+      I've been running these examples on the <a href="http://www.nodify.us/appliance/">Nodify.US
+      Node.JS Development Kickstarter Appliance</a> which uses a fixed range of local IP addresses.
+      If you're doing the same, you can click on either of the two links to see this page served via
+      HTTP or HTTPS. 
+    </p>
+   
+    <ul>
+      <li>HTTP: <a href="http://helium.l.nodify.us:10101/">http://helium.l.nodify.us:10101/</a></li>
+      <li>HTTPS: <a href="https://helium.l.nodify.us:10102/">http://helium.l.nodify.us:10102/</a></li>
+    </ul>
+   
+    <p>
+      If you're running this example on a different host, you'll likely have to modify the URLs in the links
+      above.
+    </p>
+   
+    <p>
+      Also, if you click on the HTTPS link above, your browser should give you a dire warning that you're
+      about to click on a site whose URL doesn't match the name in the certificate. This is because the
+      certificate we distribute with this package is completely insecure. Please don't try to use it on
+      a production system (or any system with sensitve data.)
+    </p>
+    
+    <p>
+      The easiest way to create your own key and certificate is to use the <a href="http://www.openssl.org/">OpenSSL</a> command line utility
+      to generate the appropriate key and CSR (Certificate Signature Request) files. You then pick a
+      Certifying Authority to sign the public key associated with the private key you generated and
+      follow their process to retrieve a server certificate.
+    </p>
+    
+  </body>
+</html>

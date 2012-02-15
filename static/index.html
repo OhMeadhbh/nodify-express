@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Express Application(s)</title>
+    <link rel="stylesheet" type="text/css" href="/css/default.css" />
+  </head>
+  <body>
+    <h1>nodify-express</h1>
+
+    <p>
+      If you're reading this, it means that one or more of the example
+      servers are running.
+    </p>
+    <p>
+      The following is a list of servers you can run to demonstrate specific
+      features of express middleware. They're listed more or less in order of
+      complexity, so if you feel like a beginner, favor the examples towards the
+      beginning of the list. If you're an old pro, find the server you're
+      interested in and go for it! If something doesn't make sense in a later
+      example, scan the previous examples to see if there are "how to's."
+    </p>
+
+    <p>
+      Officially, you're supposed to look at the nodify-express documentation
+      to figure out how to start the server, but if that line has already scrolled
+      off the top of the window, here's the cheat. To start any particular server,
+      issue a command like this:
+    </p>
+    
+    <blockquote><pre>node 001_static.js</pre></blockquote>
+  
+    <p>
+      This command, for example, starts the first example server. Some
+      servers take parameters, like this one:
+    </p>
+  
+    <blockquote><pre>node 005_config.js --config 005_config.json</pre></blockquote>
+  
+    <p>
+      Check the list of servers here for required options. If none are
+      listed, you should be able to get away with the first form.
+    </p>
+
+    <hr />
+
+    <dl>
+      <dt><a href="001_static.html">001_static.js</a></dt>
+      <dd>
+        <p>
+          This is a simple static server intended to show off the basic
+          structure of an express web application. Topics covered include:
+        </p>
+        <ul>
+          <li>the structure of a simple express application</li>
+          <li>how to create, start and stop an express application</li>
+          <li>the favicon middleware component</li>
+          <li>the logger middleware component</li>
+          <li>the static file middleware component</li>
+          <li>the directory list middleware component</li>
+        </ul>
+      </dd>
+
+      <dt><a href="002_https.html">002_https.js</a></dt>
+      <dd>
+        <p>
+          This server goes into the details of starting a HTTPS server.
+          Specific topics covered include:
+        </p>
+        <ul>
+          <li>how to start a https (SSL/TLS) server</li>
+          <li>listening on multiple ports</li>
+        </ul>
+      </dd>
+    </dl>
+  </body>
+</html>

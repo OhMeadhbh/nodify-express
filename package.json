@@ -1,0 +1,26 @@
+{
+  "name": "nodify-express",
+  "description": "Example applications using node.js and express.",
+  "maintainers": [
+    {
+      "name": "Meadhbh Hamrick",
+      "email": "OhMeadhbh@gmail.com",
+      "web": "http://meadhbh.org/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/OhMeadhbh/nodify-express/raw/master/LICENSE"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/OhMeadhbh/nodify-express"
+    }
+  ],
+  "directories": [ "static", "resources" ],
+  "version": "0.0.1",
+  "keywords": ["node.js", "express", "examples" ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Express Application 001 : Static Files</title>
+    <link rel="stylesheet" type="text/css" href="/css/default.css" />
+  </head>
+  <body>
+    <h1>Sample Express Application 001 : Static Files</h1>
+
+    <p>
+      Welcome to the resource page for example application 001. You are currently
+      viewing a HTML page served up using the
+      <a href="http://www.senchalabs.org/connect/middleware-static.html">static middleware</a>
+      from <a href="http://www.senchalabs.org/connect/">connect.js</a>. (Express.js is layered
+      on top of a previous package called "connect.js")
+    </p>
+    
+    <h2>Looking at the Logs</h2>
+    
+    <p>
+      Now that you've requested this page, you may want to visit the log file for the 001_static.js
+      application. You should see a line that looks like this:
+      
+    </p>
+
+    <blockquote><pre>192.168.56.1 - - [Wed, 15 Feb 2012 00:41:52 GMT] "GET /001_static.html HTTP/1.1" 200 833 "http://helium.l.nodify.us:10100/" "blah... blah... blah..."</pre></blockquote>
+    
+    <p>
+      If you click on a <a href="./foo.html">link to a resource that doesn't exist</a>, you should see something like this in the log:
+    </p>
+    
+    <blockquote><pre>192.168.56.1 - - [Wed, 15 Feb 2012 00:44:39 GMT] "GET /foo.html HTTP/1.1" <strong>404</strong> - "-" "blah... blah... blah..."</pre></blockquote>
+    
+    <p>
+      The main difference here is the 404 return code. This is just to show you that node + express can be setup to behave very similarly to apache.
+      Visit the <a href="http://www.senchalabs.org/connect/middleware-logger.html">logger middleware page</a> for more info.
+    </p>
+    
+    <h2>Favicons</h2>
+    
+    <p>
+      Another topic covered in this example is the <a href="http://www.senchalabs.org/connect/middleware-favicon.html">favicon middleware</a>.
+      <a href="/favicon.ico">Click here</a> to see the favicon this app is serving up.
+    </p>
+
+    <h2>Directory Listing</h2>
+    
+    <p>
+      Express can be configured to provide directory listings if you like. Look what happens when you point your browser at the <a href="/css">/css</a>
+      directory (that doesn't have an index.html file in it.)
+    </p>
+
+  </body>
+</html>
